@@ -15,14 +15,14 @@ Create a file named `.env` inside your **`backend/`** directory (at the same lev
 ```env
 PORT=5000
 MONGODB_URI=mongodb://localhost:27017/event-management
-JWT_SECRET=your-secret-key-here-for-jwt-tokens
+JWT_SECRET=
 
 # Email Service Configuration (for Nodemailer)
 EMAIL_SERVICE_HOST=smtp.gmail.com
 EMAIL_SERVICE_PORT=587
 EMAIL_SERVICE_SECURE=false # Use true for port 465 (SSL), false for port 587 (TLS/STARTTLS)
-EMAIL_AUTH_USER=22311a0563@cse.sreenidhi.edu.in # Your Gmail address
-EMAIL_AUTH_PASS=lguhwxfzaksewgwk # IMPORTANT: Use an App Password if 2FA is enabled for your Gmail account.
+EMAIL_AUTH_USER= # Your Gmail address
+EMAIL_AUTH_PASS= # IMPORTANT: Use an App Password if 2FA is enabled for your Gmail account.
 ```
 ⚠️ Important Note on Email Passwords: If your Gmail account has 2-Step Verification enabled, you must use a Gmail App Password instead of your regular Gmail password for EMAIL_AUTH_PASS. This is a security measure by Google.
 2. Configure Target Email for Testing
