@@ -1,0 +1,26 @@
+# Node.js
+node_modules/
+.env
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnp/
+.pnp.js
+dist/
+build/
+coverage/
+# If you're using VS Code
+.vscode/
+
+# Frontend specific (e.g., if you have a 'frontend' folder)
+/frontend/node_modules/
+/frontend/build/
+/frontend/.env
+
+# Backend specific (e.g., if you have a 'backend' folder)
+/backend/node_modules/
+/backend/.env
+
+# Other common OS files
+.DS_Store
+Thumbs.db
