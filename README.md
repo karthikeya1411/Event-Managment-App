@@ -23,28 +23,33 @@ EMAIL_SERVICE_PORT=587
 EMAIL_SERVICE_SECURE=false # Use true for port 465 (SSL), false for port 587 (TLS/STARTTLS)
 EMAIL_AUTH_USER=22311a0563@cse.sreenidhi.edu.in # Your Gmail address
 EMAIL_AUTH_PASS=lguhwxfzaksewgwk # IMPORTANT: Use an App Password if 2FA is enabled for your Gmail account.
+```
 ⚠️ Important Note on Email Passwords: If your Gmail account has 2-Step Verification enabled, you must use a Gmail App Password instead of your regular Gmail password for EMAIL_AUTH_PASS. This is a security measure by Google.
 2. Configure Target Email for Testing
 To ensure email notifications are sent to your preferred address during development and testing:
 •	Open the relevant backend route/controller files where emails are sent (e.g., in backend/controllers or backend/routes).
-•	Locate and update the following line:
- 	const TARGET_EMAIL_FOR_ALL_MAILS = 'your-email@example.com';
+•	Locate and update the following line:```
+ 	const TARGET_EMAIL_FOR_ALL_MAILS = 'your-email@example.com';```
 •	Replace 'your-email@example.com' with your actual email address.
 3. Initialize the Backend
 Navigate to the backend/ directory in your terminal:
 cd backend
 Install dependencies:
+```
 npm install
 Start the backend server (ensure nodemon is installed globally or as a dev dependency):
 npm run dev
+```
 The backend server will now be running on http://localhost:5000.
 4. Initialize the Frontend
 Open a new terminal window and navigate to the frontend/ directory:
+```
 cd frontend
 Install dependencies:
 npm install
 Start the React development server:
 npm start
+```
 The React application will open in your browser, typically at http://localhost:3000.
 
 📂 Project Structure
